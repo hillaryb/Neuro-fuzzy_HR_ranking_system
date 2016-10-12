@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Flitlinks application </title>
+</head>
+<style>
+input, select {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #f2f2f2;
+    border-radius: 4px;
+    
+}
+textarea {
+  width: 500px;
+  height: 100px;
+  padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #2A88AD;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+h2 {
+   background: #2A88AD;
+    padding: 20px 30px 15px 30px;
+    margin: -30px -30px 30px -30px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+}
+div.one {
+  border-style: dashed;
+  border-color: #2A88AD;
+}
+div.two {
+  border-style: dashed;
+  border-color: #2A88AD;
+
+}
+div.three {
+  border-style: dashed;
+  border-color: #2A88AD;
+}
+div.four {
+  border-style: dashed;
+  border-color: #2A88AD;
+}
+div.two1 {
+  border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: dashed;
+    border-left-style: none;
+    border-color: #2A88AD;
+}
+div.two2 {
+  border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: dashed;
+    border-left-style: none;
+    border-color: #2A88AD;
+}
+div.two3 {
+  border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: dashed;
+    border-left-style: none;
+    border-color: #2A88AD;
+}
+div.two4 {
+  border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-color: #2A88AD;
+}
+h4 {
+  background: #2A88AD;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px
+}
+span {
+  display: block;
+    margin-top: 2px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+h5 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #2A88AD;
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+legend {
+   font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #2A88AD;
+}
+table, tr {
+    border: none;
+}
+td {
+  border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+</style>
+
+<body>
+<h2>FLITLINKS COMPANY LIMITED <span>RECRUITMENT FORM </span></h2>
+<div>
+<FORM METHOD="POST" ACTION="appconn.php" onsubmit="myFunction()" >
+<legend>
+<h4>A</h4> Personal Details
+</legend>
+<div class="one">
+<TABLE BORDER="" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD>First name:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="fname" SIZE="60" required>
+    </TD>
+    <TD>Other Names:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="lname" SIZE="60" required>
+    </TD>
+  </TR>
+  <TR>
+    <TD>E-mail Address:</TD>
+    <TD><INPUT TYPE="email" NAME="email" SIZE="60" required></TD>
+    <TD>Tel number</TD>
+    <TD><INPUT TYPE="TEXT" NAME="tel_number" SIZE="60" required></TD>
+  </TR>
+   <TR>
+    <TD>Date Of Birth:</TD>
+    <TD>
+      <INPUT TYPE="date" NAME="dob" SIZE="60" required>
+    </TD>
+    <TD>Nationality:</TD>
+    <TD>
+      <select name="nationality" style="width: 500px" required>
+   <option value="">--Select--</option>
+  <option value="Uganda">Uganda</option>
+  <option value="Kenya">Kenya</option>
+  <option value="Tanzania">Tanzania</option>
+</select>
+    </TD>
+  </TR>
+  <TR>
+    <TD>Postal Address:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="postal" SIZE="60" required>
+    </TD>
+    <TD>Id/Passport No.:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="id_no" SIZE="60" required>
+    </TD>
+  </TR>
+  <TR>
+  <TD>Gender:</TD>
+  <TD>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+  </TD>
+  </TR>
+</TABLE>
+</div>
+
+
+<legend>
+<h4>B</h4> Education
+</legend>
+<div class="two">
+<div class="two1">
+<TABLE BORDER="">
+<h5>University Details</h5>
+  <TR>
+    <TD>University:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="University" SIZE="50">
+    </TD>
+    <TD>Degree:</TD>
+    <TD>
+
+   <select name="Degree">
+   <option value="">--Select--</option>
+  <option value="bachelor of commerce">bachelor of commerce</option>
+  <option value="bachelor of business administration">bachelor of business administration</option>
+  <option value="bachelor of computer engineering">bachelor of computer engineering</option>
+</select>
+
+    </TD>
+    <TD>CGPA:</TD>
+    <TD>
+      <INPUT TYPE="number" NAME="CGPA" SIZE="20" step = "0.01" >
+    </TD>
+  </TR>
+  <TR>
+    <TD>Start:</TD>
+    <TD><INPUT TYPE="date" NAME="Start" SIZE="25"></TD>
+    <TD>End:</TD>
+    <TD><INPUT TYPE="date" NAME="End" SIZE="25"></TD>
+  </TR>
+</TABLE>
+</div>
+<div class="two2">
+<TABLE BORDER="">
+<h5>Professional Course</h5>
+   <TR>
+    <TD>Institution:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="institution" SIZE="30">
+    </TD>
+    <TD>Course:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="course" SIZE="30">
+    </TD>
+     <TD>Course Level(no.of papers passed):</TD>
+    <TD>
+      <INPUT TYPE="number" NAME="Courselevel" SIZE="20">
+    </TD>
+  </TR>
+  <TR>
+    <TD>Start:</TD>
+    <TD>
+      <INPUT TYPE="date" NAME="Start1" SIZE="25">
+    </TD>
+    <TD>End:</TD>
+    <TD>
+      <INPUT TYPE="date" NAME="End1" SIZE="25">
+    </TD>
+    <TD>GRADE:</TD>
+    <TD>
+      <INPUT TYPE="number" NAME="CGPA1" SIZE="20">
+    </TD>
+  </TR>
+</TABLE>
+</div>
+<div class="two3">
+<TABLE BORDER="">
+<h5>high school details</h5>
+   <TR>
+    <TD>A level school:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="a_level" SIZE="50">
+    </TD>
+    <TD>Award:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="award" SIZE="50">
+    </TD>
+     <TD>Grade:</TD>
+    <TD>
+      <INPUT TYPE="number" NAME="grade" SIZE="20" min = "0" max = "25">
+    </TD>
+  </TR>
+  <TR>
+    <TD>Start:</TD>
+    <TD>
+      <INPUT TYPE="date" NAME="Start2" SIZE="25">
+    </TD>
+    <TD>End:</TD>
+    <TD>
+      <INPUT TYPE="date" NAME="End2" SIZE="25">
+    </TD>
+  </TR>
+</TABLE>
+</div>
+<div class="two4">
+<TABLE BORDER="">
+   <TR>
+    <TD>O level school:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="o_level" SIZE="50">
+    </TD>
+    <TD>Award:</TD>
+    <TD>
+      <INPUT TYPE="TEXT" NAME="award1" SIZE="50">
+    </TD>
+     <TD>Grade:</TD>
+    <TD>
+      <INPUT TYPE="number" NAME="grade1" SIZE="20" min = "8" max = "72" required>
+    </TD>
+  </TR>
+  <TR>
+    <TD>Start:</TD>
+    <TD>
+      <INPUT TYPE="date" NAME="Start3" SIZE="25">
+    </TD>
+    <TD>End:</TD>
+    <TD>
+      <INPUT TYPE="date" NAME="End3" SIZE="25">
+    </TD>
+  </TR>
+</TABLE>
+</div>
+</div>
+
+
+
+<legend>
+<h4>C</h4> Work Experience
+</legend>
+<div class="three">
+<TABLE BORDER="">
+  <TR>
+    <TD>Organisation</TD>
+    <TD>Start date</TD>
+    <TD>End date</TD>
+    <TD>Position</TD>
+  </TR>
+  <TR>
+    
+    <TD><INPUT TYPE="TEXT" NAME="organisation1" SIZE="30"></TD>
+     <TD><INPUT TYPE="date" NAME="start_date1" SIZE="30"></TD>
+    <TD><INPUT TYPE="date" NAME="end_date1" SIZE="30"></TD>
+     <TD><INPUT TYPE="TEXT" NAME="position1" SIZE="30"></TD>
+  </TR>
+   <TR>
+  
+   <TD><INPUT TYPE="TEXT" NAME="organisation2" SIZE="30"></TD>
+     <TD><INPUT TYPE="date" NAME="start_date2" SIZE="30"></TD>
+    <TD><INPUT TYPE="date" NAME="end_date2" SIZE="30"></TD>
+     <TD><INPUT TYPE="TEXT" NAME="position2" SIZE="30">
+</TD>
+  </TR>
+  <TR>
+    
+    <TD><INPUT TYPE="TEXT" NAME="organisation3" SIZE="30"></TD>
+     <TD><INPUT TYPE="date" NAME="start_date3" SIZE="30"></TD>
+    <TD><INPUT TYPE="date" NAME="end_date3" SIZE="30"></TD>
+     <TD>
+     <INPUT TYPE="TEXT" NAME="position3" SIZE="30">
+</TD>
+  </TR>
+</TABLE>
+</div>
+
+<legend>
+<h4>D</h4> Languages
+</legend>
+<div class="four">
+<TABLE BORDER="">
+  <TR>
+    <TD>Language</TD>
+    <TD>Speak</TD>
+    <TD>Read</TD>
+    <TD>Write</TD>
+  </TR>
+  <TR>
+  <TD><INPUT TYPE="TEXT" NAME="language1" SIZE="30"></TD>
+    
+    <TD><select name="speak1" style="width: 250px">
+    <option value="">--Select--</option>
+  <option value="fluent">fluent</option>
+  <option value="good knowledge">good knowledge</option>
+  <option value="basic knowledge">basic knowledge</option>
+  
+</select></TD>
+<TD><select name="read1" style="width: 250px">
+<option value="">--Select--</option>
+   <option value="fluent">fluent</option>
+  <option value="good knowledge">good knowledge</option>
+  <option value="basic knowledge">basic knowledge</option>
+  
+</select></TD>
+<TD><select name="write1" style="width: 250px">
+<option value="">--Select--</option>
+  <option value="fluent">fluent</option>
+  <option value="good knowledge">good knowledge</option>
+  <option value="basic knowledge">basic knowledge</option>
+</select></TD>
+
+     
+  </TR>
+   <TR>
+   <TD><INPUT TYPE="TEXT" NAME="language2" SIZE="30"></TD>
+  
+   <TD><select name="speak2" style="width: 250px">
+   <option value="">--Select--</option>
+  <option value="fluent">fluent</option>
+  <option value="good knowledge">good knowledge</option>
+  <option value="basic knowledge">basic knowledge</option>
+</select></TD>
+<TD><select name="read2" style="width: 250px">
+<option value="">--Select--</option>
+  <option value="fluent">fluent</option>
+  <option value="good knowledge">good knowledge</option>
+  <option value="basic knowledge">basic knowledge</option>
+</select></TD>
+<TD><select name="write2" style="width: 250px">
+<option value="">--Select--</option>
+  <option value="fluent">fluent</option>
+  <option value="good knowledge">good knowledge</option>
+  <option value="basic knowledge">basic knowledge</option>
+</select></TD>
+     
+  </TR>
+  <TR>
+  <TD><INPUT TYPE="TEXT" NAME="language3" SIZE="30"></TD>
+    
+    <TD><select name="speak3" style="width: 250px">
+    <option value="">--Select--</option>
+  <option value="fluent">fluent</option>
+  <option value="good knowledge">good knowledge</option>
+  <option value="basic knowledge">basic knowledge</option>
+</select></TD>
+<TD><select name="read3" style="width: 250px">
+<option value="">--Select--</option>
+  <option value="fluent">fluent</option>
+  <option value="good knowledge">good knowledge</option>
+  <option value="basic knowledge">basic knowledge</option>
+</select></TD>
+<TD><select name="write3" style="width: 250px">
+<option value="">--Select--</option>
+  <option value="fluent">fluent</option>
+  <option value="good knowledge">good knowledge</option>
+  <option value="basic knowledge">basic knowledge</option>
+</select></TD>
+     
+  </TR>
+</TABLE>
+</div>
+
+
+<legend>
+<h4>E</h4> Personal Fit
+</legend>
+<TABLE BORDER="">
+  <TR>
+    <TD>describe yourself in a few words(max 150 words)</TD>
+    
+  </TR>
+  <TR>
+
+    <TD><textarea rows="4" cols="50" NAME="about_me" SIZE="120" style="width: 1000px" required></textarea></TD>
+    
+  </TR>
+   
+</TABLE>
+
+<legend>
+<h4>F</h4> Career Motivation
+</legend>
+<TABLE BORDER="">
+<TR>
+    <TD>what attracts you to Flitlinks?(max 150 words)</TD>
+    
+  </TR>
+  
+  <TR>
+    
+    <TD><textarea rows="4" cols="50" NAME="motivationx" style="width: 1000px" required></textarea ></TD>
+    
+    
+  </TR>
+   
+</TABLE>
+<TABLE BORDER="">
+<p>
+<TD>
+Please attach files for your documents below:<br>
+</TD>
+</P>
+<P>
+<TR>
+    <TD>university transcript</TD>
+<TD><input type="file" name="datafile" size="40"></TD>
+</TR>
+<TR>
+    <TD>alevel certificate</TD>
+    
+  
+<TD><input type="file" name="datafile" size="40"></TD>
+</TR>
+<TR>
+    <TD>olevel certificate</TD>
+    
+  
+<TD><input type="file" name="datafile" size="40"></TD>
+</TR>
+<TR>
+    <TD>other</TD>
+  
+<TD><input type="file" name="datafile" size="40"></TD>
+</TR>
+<TR>
+    <TD>other</TD>
+<TD><input type="file" name="datafile" size="40"></TD>
+</TR>
+</TABLE>
+<P><INPUT TYPE="SUBMIT" VALUE="Submit" NAME="B1"  align="right"></P>
+
+</FORM>
+</div>
+
+<script>
+function myFunction() {
+    alert("The form was submitted successfully");
+}
+</script>
+
+</body>
+</html>
